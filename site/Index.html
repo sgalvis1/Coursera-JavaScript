@@ -2,37 +2,27 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <title>JG</title>
-    <style>
-        p {
-            color: blue;
-            font: montserrat;
-            font-size: 20px;
-            width: 200px;
-        }
-        h1 {
-            color: green;
-            font: montserrat;
-            font-size: 36px;
-            text-align: center;
-        }
-    </style>
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <link href="C:\Users\sgalv\Coursera-JavaScript\FirstStyle.css" rel="stylesheet">
+    <title>JG</title>       
 </head>    
 <body>
     <head>
-        Welcome to our Head JG Page
+        There will be always a solution
     </head>
-    <h1 id="top" style="color: green; font-size: 60px; text-align: center;"> Welcome</h1>
+
+    <h1 id="top" ">Web App Project</h1>
     
-    <nav>
-        <a href="#section1">Section 1</a> | <a href="#section2">Section 2</a> |
-        <a href="#section3">Section 3</a> | <a href="#top">Back to the top</a> |
-        <a href="#links">Links section</a>
+    <nav class='list'>
+        <a href="#HTMLsection">HTML</a> | <a href="#CSSsection">CSS</a> |
+        <a href=#JavaScriptsection>JavaScript</a> | <a href="#top">Back to the top</a> |
+        <a href="#links">Links</a>
     </nav>
 
-    <p style="margin: 25px 100px 0 100px;font-size: large;"> My name is Juan and I love you... </p>
-    <section id="section1">
-        <h2>Section 1</h2>
+    <p style="margin: 25px 100px 0 100px;font-size: large;"> Welcom to the learning section </p>
+  
+    <section id="HTMLSection">
+        <h2>HTML</h2>
         <p>This is the first section with an article</p>
         <article>
             Article 1
@@ -40,28 +30,27 @@
         <aside>
             Hi Aside
         </aside>
-    </section>
 
-    <section id="section2">
-        <h2>Section 2 - Unordered list</h2>
-        <p>This is the second section with an unordered list</p>
-        <ul>
-            <li>Frist Item</li>
-            <li>Second Item</li>
-            <li>Third Item
-                <ul>
-                    <li>Sub First Item</li>
-                    <li>Sub Second Item</li>
-                    <li>Sub Third Item</li>
-                </ul>
-            </li>
-            <li>Fourth Item</li>
-        </ul>
-    </section>
+        <div>
+            <h3>Unordered List</h3>
+            <p class="version2">CSS : Version 2 - This is the second div with an unordered list</p>
+            <ul>
+                <li>Frist Item</li>
+                <li>Second Item</li>
+                <li>Third Item
+                    <ul>
+                        <li>Sub First Item</li>
+                        <li>Sub Second Item</li>
+                        <li>Sub Third Item</li>
+                    </ul>
+                </li>
+                <li>Fourth Item</li>
+            </ul>
+        </div>
 
-    <section id="section3">
-        <h2>Section 3 - Ordered List</h2>
-        <p>This is the third section</p>
+        <div>
+            <h3>Ordered List</h3>
+            <p>This is the third section</p>
         <ol>
             <li>Frist Item</li>
             <li>Second Item</li>
@@ -74,45 +63,72 @@
             </li>
             <li>Fourth Item</li>
         </ol>
-    </section>
-    <div>
-        <h2>This is a division</h2>
-        <p>What is the difference between a section and a division?</p>
-        
-        <p>There is not a really difference on the visual interface. Div must used in case
-            there is not another tag that could be used, for instance; nav,section,article.
-            Div is usually used for CCS style porpose.
+        </div>
+
+        <h3>Entities</h2>
+        <p>
+            The use of enteties allow users to use some special caracters such as &lt; &amp; &gt; or&nbsp;to&nbsp;
+            keek&nbsp;together&nbsp;some&nbsp;sentence under a responsive situation    
         </p>
 
         <div>
-            <h2>Entities</h2>
-            <p>
-                The use of enteties allow users to use some special caracters such as &lt; &amp; &gt; or&nbsp;to&nbsp;
-                keek&nbsp;together&nbsp;some&nbsp;sentence under a responsive situation    
+            <h3>This is a division</h2>
+            <p>What is the difference between a section and a division?</p>
+            
+            <p>There is not a really difference on the visual interface. Div must used in case
+                there is not another tag that could be used, for instance; nav,section,article.
+                Div is usually used for CCS style porpose.
             </p>
+    
         </div>
+        
+        <div>
+            <h3>Images</h2>
+            <p style="text-align: center;"> <img src="https://wallpaperaccess.com/full/99785.jpg" 
+                height="100px" width="100px"> </p>
+        </div>
+        <div>
+            <h3>External and internal links to another page</h2>
+                <a href="SecondPage.html">Go to the second page  </a>
+               <p></p>
+                <a href="SecondPage.html" target="_blank">
+                    <div>
+                        Go to the second page in a new tab
+                    </div>  </a>
+        </div>
+        <div>
+            <h3> Text Input </h3>
+            <div class="textInput" >
+                <input type="text" id="name" name="name" size="50" >
+                <p></p>
+                <label for="story">Tell us your story:</label>
 
-        <section id="images">
-            <h2>Images</h2>
-            <p style="text-align: center;"> <img src="https://lh3.googleusercontent.com/proxy/5ggz-PsSuZRXfNQbEvotip9RFz5AOE9-erjUP8t62rBvwq2sAIoNRZWawky6ozZBF9uraAK6p_sV0h-Z_Y1LPS3boFpkxLkA_TJTf1ui4Q" 
-                height="540px" width="540"> </p>
+                <textarea id="story" name="story"
+                          rows="5" cols="33">
+                It was a dark and stormy night...
+                </textarea>
+            </div>
+        </div>
+    </section>
 
-        </section>
-        <section id="links"> 
-            <h2>External and internal links to another page</h2>
-            <a href="SecondPage.html">Go to the second page </a>
-            <a href="SecondPage.html" target="_blank">
-                <div>
-                   Go to the second page in a new tab
-                </div>  </a>
-        <h2>Internal Items links</h2>
-        <article>
-            <nav>
-                <a href="#section1">Section 1</a> | <a href="#section2">Section 2</a> |
-                <a href="#section3">Section 3</a> | <a href="#top">Back to the top</a>
-            </nav>
-        </article>
-        </section>
+    <section id="CSSsection">
+        <h2>CSS</h2>
+        
+    </section>
+
+    <section id="JavaScriptsection">
+        <h2>JavaScript</h2>
+    </section>
+
+    <section id="links"> 
+    <h3>Internal Items links</h3>
+    <article>
+        <nav>
+            <a href="#section1">Section 1</a> | <a href="#section2">Section 2</a> |
+            <a href="#section3">Section 3</a> | <a href="#top">Back to the top</a>
+        </nav>
+    </article>
+    </section>
 
     
 
